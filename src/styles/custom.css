@@ -1,0 +1,295 @@
+/* custom.css */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo-title {
+  color: #000000; /* Texto negro */
+  font-size: 2rem;
+  font-weight: bold;
+  animation: slideInFromTop 1s ease-out;
+  text-align: center;
+  width: 100%;
+  text-shadow:
+    -1px -1px 0 #00aeff,
+     1px -1px 0 #00aeff,
+    -1px  1px 0 #00aeff,
+     1px  1px 0 #00aeff; /* Borde blanco */
+     font-family: 'Russo One', sans-serif;
+
+}
+
+/* Botones del navbar */
+.nav-button {
+  background-color: #ddc9c99d ;
+  color: #000000; /* Azul oscuro */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #fafafa; /* Azul oscuro */
+  color: rgb(0, 0, 0);
+}
+/* Fondo cálido para toda la página */
+body, .font-sans {
+  background-color: #ddc9c99d !important;
+}
+
+/* Estilos para el formulario de registro */
+.register-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1E3A8A;
+  font-weight: bold;
+  text-align: center;
+}
+
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.register-form button {
+  width: 100%;
+  background-color: #1E3A8A;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+  background-color: #274baf;
+}
+/* Tailwind CSS para el formulario de inicio de sesión */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8fafc; /* Fondo gris claro */
+}
+
+/* Contenedor general */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: rgba(249, 250, 251, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+/* Estilos del card (tarjeta de login) */
+.card-login {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-register {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Formulario de inicio de sesión */
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-login input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+
+.form-login input:focus {
+  border: 2px solid #60a5fa; /* Azul brillante */
+  outline: none;
+}
+
+.form-login button {
+  width: 100%;
+  padding: 15px;
+  background-color: #2563eb; /* Azul */
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.form-login button:hover {
+  background-color: #1d4ed8; /* Azul más oscuro */
+}
+
+.form-login .error-message {
+  color: #f87171; /* Rojo para los errores */
+  font-size: 12px;
+  text-align: center;
+  margin-top: -12px;
+}
+
+.form-login .success-message {
+  color: #4ade80; /* Verde para el éxito */
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilos del formulario de registro */
+.form-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-register input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+
+.form-register input:focus {
+  border: 2px solid #60a5fa; /* Azul brillante */
+  outline: none;
+}
+
+.form-register button {
+  width: 100%;
+  padding: 15px;
+  background-color: #2563eb; /* Azul */
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.form-register button:hover {
+  background-color: #1d4ed8; /* Azul más oscuro */
+}
+
+.form-register .error-message {
+  color: #f87171; /* Rojo para los errores */
+  font-size: 12px;
+  text-align: center;
+  margin-top: -12px;
+}
+
+.form-register .success-message {
+  color: #4ade80; /* Verde para el éxito */
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* Estilos para el cargador */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* Fondo blanco transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 1s ease-out;
+}
+
+.logo-loading {
+  width: 250px; /* Tamaño del logo */
+  animation: rotateLogo 2s linear infinite;
+}
+
+/* Animación para el logo */
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animación de fadeIn para el loader */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Cuando la página se haya cargado, esconder el loader y mostrar el contenido */
+body.loaded #loader {
+  display: none;
+}
+
+body.loaded .content {
+  display: block;
+}
+/* Estilo de botones */
+button:hover {
+  background-color: white;
+  color: #1E3A8A; /* Azul oscuro */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+  background-color: #1E3A8A; /* Azul oscuro */
+  color: white;
+}
